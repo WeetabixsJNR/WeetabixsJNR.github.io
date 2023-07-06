@@ -39,16 +39,16 @@ hero:
   hero-title: Hi! I’m <br> Darragh <br> IT Support Officer
 
 social:
+  - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/darragh-crawley-doyle-1481bb201/" }
   - { icon: "ti-facebook", link: "https://www.facebook.com/profile.php?id=100087389336743" }
   - { icon: "ti-instagram", link: "https://www.instagram.com/darraghcrawleydoyle/" }
-  - { icon: "ti-dribbble", link: "#" }
   - { icon: "ti-twitter", link: "https://twitter.com/WeetabixsJNR" }
 
 #-------------------------------
 # About (Section and Page)
 
 # About Section
-blurb: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+blurb: I am a hard-working, motivated and enthusiastic person who has developed a mature and responsible approach to any task that I undertake. I strive to achieve the highest standard possible, and I am accustomed to working in a challenging fast-paced environment, and I enjoy dealing with multiple projects and priorities at the same time.
 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
@@ -102,13 +102,13 @@ experience:
       name: IT SharePoint Solutions,
       icon: "icon-1.png",
       date: "Mar 2020 - Jul 2022",
-      organization: "McArdle's Office & Computer Supplies",
+      organization: "MCARDLES COMPUTER AND OFFICE SUPPLIES",
     }
   - {
       name: IT Support Officer,
       icon: "icon-2.png",
       date: "Jul 2022 - Present",
-      organization: "An Cosán",
+      organization: "AN COSÁN,
     }
   - {
       name: Senior UI Designer,
