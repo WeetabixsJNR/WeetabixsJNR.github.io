@@ -9,7 +9,6 @@
   <!-- theme meta -->
   <meta name="theme-name" content="kross-jekyll" />
 
-    
   {% if site.author %}
   <meta name="author" content="{{ . }}">
   {% endif %}
@@ -31,4 +30,13 @@
     {% include google-analytics.html %}
   {% endif %}
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NS1DF6CTVG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-NS1DF6CTVG');
+  </script>
 </head>
