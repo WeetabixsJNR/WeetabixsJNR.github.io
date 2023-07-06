@@ -57,41 +57,41 @@ blurb-btn-name: know more
 
 # Work Process Section
 work-process:
-  - title: "Research and Plan"
+  - title: "Identify and Analyze"
     icon: "assets/images/icons/plan.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Proficient at detecting and dissecting IT issues using diagnostic tools, understanding system logs, and laying out effective plans for system enhancements."
 
-  - title: "Design and Develop"
+  - title: "Troubleshoot and Resolve"
     icon: "assets/images/icons/design.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Leveraging in-depth knowledge of various hardware and software to troubleshoot a diverse range of technical issues, as well as experience in maintaining and updating IT systems."
 
-  - title: "Deliver"
+  - title: "Support and Educate"
     icon: "assets/images/icons/print.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    content: "Excelling at providing user support and training, adept at simplifying complex IT concepts for non-technical users, and experienced in creating user-friendly guides and conducting training sessions."
 
 # My Team Section
-team:
-  - title: "Jack Schenziwe"
-    image: "assets/images/team/member-1.png"
-    designation: "Project Manager"
-
-  - title: "Julias Carlie"
-    image: "assets/images/team/member-2.png"
-    designation: "Web Developer"
-
-  - title: "John Doe"
-    image: "assets/images/team/member-3.png"
-    designation: "Designer"
+# team:
+#  - title: "Jack Schenziwe"
+#    image: "assets/images/team/member-1.png"
+#    designation: "Project Manager"
+#
+#  - title: "Julias Carlie"
+#    image: "assets/images/team/member-2.png"
+#    designation: "Web Developer"
+#
+#  - title: "John Doe"
+#    image: "assets/images/team/member-3.png"
+#    designation: "Designer"
 
 #-------------------------------
 # Skills Section
 
 skills-title: Skills
 skills:
-  - { name: Web Design, color: "#fdb157", value: "90%" }
-  - { name: Logo Design, color: "#9473e6", value: "60%" }
-  - { name: After Effects, color: "#bdecf6", value: "80%" }
-  - { name: Web App, color: "#ffbcaa", value: "70%" }
+  - { name: Technical Support and Troubleshooting, color: "#fdb157", value: "90%" }
+  - { name: User Assistance and Training, color: "#9473e6", value: "85%" }
+  - { name: System Maintenance and Monitoring, color: "#bdecf6", value: "75%" }
+  - { name: Project Management and Strategy, color: "#ffbcaa", value: "60%" }
 
 #-------------------------------
 # Exprerience Section
@@ -267,37 +267,43 @@ testimonial-items:
 
 client-slider-items:
   - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
+    url: "https://www.javarepublic.com/"
 
   - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
+    url: "https://blckbrnd.net/"
 
   - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
+    url: "https://www.avc.ie/"
 
   - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
+    url: "https://oreillyconcrete.com/"
 
   - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+    url: "https://www.mcardles.ie"
+
+  - logo: "assets/images/clients-logo/client-logo-6.png"
+    url: "https://www.ancosan.ie"
 
   - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
+    url: "https://www.javarepublic.com/"
 
   - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
+    url: "https://blckbrnd.net/"
 
   - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
+    url: "https://www.avc.ie/"
 
   - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
+    url: "https://oreillyconcrete.com/"
 
   - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+    url: "https://www.mcardles.ie"
+
+  - logo: "assets/images/clients-logo/client-logo-6.png"
+    url: "https://www.ancosan.ie"
 
 #-------------------------------
 # Contact Section
 
 contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-email: darragh390@gmail.com
