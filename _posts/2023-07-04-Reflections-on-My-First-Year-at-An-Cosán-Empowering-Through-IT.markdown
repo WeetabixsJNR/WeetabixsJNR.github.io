@@ -2,7 +2,7 @@
 layout: post
 title: "Reflections on My First Year at An Cosán: Empowering Through IT"
 date: 2023-07-04 15:05:55 +0100
-image: /assets/images/blog/post-2.png
+image: /assets/images/blog/post-2.jpg
 author: Darragh Crawley-Doyle
 tags: IT, Career, Work Anniversary, Non-profit, Education, Empowerment
 ---
