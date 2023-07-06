@@ -36,13 +36,13 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Christoher <br> UX designer
+  hero-title: Hi! I’m <br> Darragh <br> IT Support Officer
 
 social:
-  - { icon: "ti-facebook", link: "#" }
-  - { icon: "ti-instagram", link: "#" }
+  - { icon: "ti-facebook", link: "https://www.facebook.com/profile.php?id=100087389336743" }
+  - { icon: "ti-instagram", link: "https://www.instagram.com/darraghcrawleydoyle/" }
   - { icon: "ti-dribbble", link: "#" }
-  - { icon: "ti-twitter", link: "#" }
+  - { icon: "ti-twitter", link: "https://twitter.com/WeetabixsJNR" }
 
 #-------------------------------
 # About (Section and Page)
@@ -99,16 +99,16 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: Junior UX Designer,
+      name: IT SharePoint Solutions,
       icon: "icon-1.png",
-      date: "Jan 2007 - Feb 2009",
-      organization: "WEBEX",
+      date: "Mar 2020 - Jul 2022",
+      organization: "McArdle's Office & Computer Supplies",
     }
   - {
-      name: UX & UI Designer,
+      name: IT Support Officer,
       icon: "icon-2.png",
-      date: "Mar 2009 - Aug 2014",
-      organization: "AUGMEDIX",
+      date: "Jul 2022 - Present",
+      organization: "An Cosán",
     }
   - {
       name: Senior UI Designer,
