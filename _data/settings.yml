@@ -9,7 +9,7 @@ description: Darragh's portfolio site
 email: darragh390@gmail.com
 phone: +353 85 283 2810
 address: 
-copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
+copyright: Copyright &copy; 2020 Originally Designed by [Themefisher](https://themefisher.com) & Modified by Darragh Crawley-Doyle
 
 menu:
   - { name: About, link: "/about" }
@@ -36,7 +36,7 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Hi! I’m <br> Darragh <br> IT Support Officer
+  hero-title: Howdy! <br> I’m Darragh <br> IT Support Officer
 
 social:
   - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/darragh-crawley-doyle-1481bb201/" }
