@@ -99,7 +99,7 @@ skills:
 experience-title: Experience
 experience:
   - {
-      name: IT SharePoint Solutions,
+      name: IT Helpdesk Technician,
       icon: "icon-1.png",
       date: "Mar 2020 - Jul 2022",
       organization: "MCARDLES COMPUTER AND OFFICE SUPPLIES",
@@ -110,12 +110,6 @@ experience:
       date: "Jul 2022 - Present",
       organization: "AN COSÁN",
     }
-  - {
-      name: Senior UI Designer,
-      icon: "icon-3.png",
-      date: "Sep 2014 - Present",
-      organization: "THEMEFISHER",
-    }
 
 #-------------------------------
 # Education Section
@@ -123,24 +117,24 @@ experience:
 education-title: Education
 education:
   - {
-      name: Marters in UX Design,
-      date: "2006",
-      organization: "Masassusets Institute of Technology",
+      name: Leaving Certificate,
+      date: "2020",
+      organization: "St. Peter's College, Dunboyne",
     }
   - {
-      name: Honours in Fine Arts,
-      date: "2004",
-      organization: "Harvard University",
+      name: "QQI Level 5 Major Award in Media and Film Production",
+      date: "2020",
+      organization: "Dunboyne College of Further Education",
     }
   - {
-      name: Higher Secondary Certificat,
-      date: "2000",
-      organization: "Cardiff School",
+      name: "Level 200, Altaro VM Backup certified",
+      date: "2020",
+      organization: "Hornetsecurity",
     }
   - {
-      name: Secondary School Certificate,
-      date: "1998",
-      organization: "Cardiff School",
+      name: CompTIA A+,
+      date: "Currently Studying",
+      organization: "eCollege",
     }
 
 #-------------------------------
@@ -284,6 +278,9 @@ client-slider-items:
   - logo: "assets/images/clients-logo/client-logo-6.png"
     url: "https://www.ancosan.ie"
 
+  - logo: "assets/images/clients-logo/client-logo-7.png"
+    url: "https://www.nfc.ie/"
+
   - logo: "assets/images/clients-logo/client-logo-1.png"
     url: "https://www.javarepublic.com/"
 
@@ -302,6 +299,8 @@ client-slider-items:
   - logo: "assets/images/clients-logo/client-logo-6.png"
     url: "https://www.ancosan.ie"
 
+  - logo: "assets/images/clients-logo/client-logo-7.png"
+    url: "https://www.nfc.ie/"
 #-------------------------------
 # Contact Section
 
