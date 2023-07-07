@@ -143,15 +143,15 @@ education:
 services-title: Hobbies
 services:
   - {
-      name: Video/Audio Editing,
-      icon: ti-music-alt,
-      description: "An enthusiast in exploring and mastering various video and audio editing techniques through software like Adobe Premiere Pro and Final Cut. My learning journey is often fueled by channels like EposVox, delivering deep dives into filming techniques.",
+      name: Gaming and Learning,
+      icon: ti-headphone-alt,
+	  description: "In my downtime, I delve into the world of video games and continually seek knowledge through diverse online content. This balance fuels my creativity and problem-solving skills, contributing positively to my professional persona.",
       active: true,
     }
   - {
-      name: Gaming and Learning,
-      icon: ti-game,
-	  description: "In my downtime, I delve into the world of video games and continually seek knowledge through diverse online content. This balance fuels my creativity and problem-solving skills, contributing positively to my professional persona.",
+      name: Video/Audio Editing,
+      icon: ti-video-clapper,
+      description: "An enthusiast in exploring and mastering various video and audio editing techniques through software like Adobe Premiere Pro and Final Cut. My learning journey is often fueled by channels like EposVox, delivering deep dives into filming techniques.",
       active: true,
     }
   - {
