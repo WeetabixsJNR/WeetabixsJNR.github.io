@@ -140,25 +140,25 @@ education:
 #-------------------------------
 # Services Section
 
-services-title: Services
+services-title: Hobbies
 services:
   - {
-      name: UI Design,
-      icon: ti-palette,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
+      name: Video/Audio Editing,
+      icon: ti-game,
+      description: "An enthusiast in exploring and mastering various video and audio editing techniques through software like Adobe Premiere Pro and Final Cut. My learning journey is often fueled by channels like EposVox, delivering deep dives into filming techniques.",
+      active: true,
     }
   - {
-      name: UX Design,
+      name: Gaming and Learning,
       icon: ti-vector,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: true, # Add true to select section
+	  description: "In my downtime, I delve into the world of video games and continually seek knowledge through diverse online content. This balance fuels my creativity and problem-solving skills, contributing positively to my professional persona.",
+      active: true,
     }
   - {
-      name: Interaction Design,
-      icon: ti-panel,
-      description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      active: ,# Add true to select section
+      name: Craftsmanship,
+      icon: ti-brush-alt,
+      description: "Passionate about creating unique, hands-on projects involving metal, wood, and leather working. I enjoy integrating my electronics knowledge into these projects, leading to innovative and personalized creations.",
+      active: true,
     }
 
 #-------------------------------
