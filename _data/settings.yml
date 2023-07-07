@@ -150,7 +150,7 @@ services:
     }
   - {
       name: Gaming and Learning,
-      icon: ti-vector,
+      icon: ti-game,
 	  description: "In my downtime, I delve into the world of video games and continually seek knowledge through diverse online content. This balance fuels my creativity and problem-solving skills, contributing positively to my professional persona.",
       active: true,
     }
