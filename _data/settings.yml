@@ -144,7 +144,7 @@ services-title: Hobbies
 services:
   - {
       name: Video/Audio Editing,
-      icon: ti-game,
+      icon: ti-music-alt,
       description: "An enthusiast in exploring and mastering various video and audio editing techniques through software like Adobe Premiere Pro and Final Cut. My learning journey is often fueled by channels like EposVox, delivering deep dives into filming techniques.",
       active: true,
     }
