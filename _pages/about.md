@@ -3,10 +3,7 @@ layout: about
 title: About Me
 author: Darragh Crawley-Doyle
 image: assets/images/about/author.png
-<<<<<<< HEAD
-=======
-# signature: assets/images/about/signature.png
->>>>>>> d6f6d44b0c2bbaa27836965d7d5388cb64f53920
+signature: assets/images/about/signature.png
 ---
 
 I have always had an interest in video/audio editing and various creative projects that usually involve learning some kind of new skill. 
