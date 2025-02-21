@@ -122,19 +122,14 @@ education:
       organization: "St. Peter's College, Dunboyne",
     }
   - {
-      name: "QQI Level 5 Major Award in Media and Film Production",
-      date: "2021",
-      organization: "Dunboyne College of Further Education",
-    }
-  - {
       name: "Level 200, Altaro VM Backup certified",
       date: "2020",
       organization: "Hornetsecurity",
     }
   - {
-      name: CompTIA A+,
-      date: "Currently Studying",
-      organization: "Pitman training",
+      name: "QQI Level 5 Major Award in Media and Film Production",
+      date: "2021",
+      organization: "Dunboyne College of Further Education",
     }
 
 #-------------------------------
@@ -269,9 +264,6 @@ client-slider-items:
   - logo: "assets/images/clients-logo/client-logo-3.png"
     url: "https://www.avc.ie/"
 
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "https://oreillyconcrete.com/"
-
   - logo: "assets/images/clients-logo/client-logo-5.png"
     url: "https://www.mcardles.ie"
 
@@ -289,9 +281,6 @@ client-slider-items:
 
   - logo: "assets/images/clients-logo/client-logo-3.png"
     url: "https://www.avc.ie/"
-
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "https://oreillyconcrete.com/"
 
   - logo: "assets/images/clients-logo/client-logo-5.png"
     url: "https://www.mcardles.ie"
