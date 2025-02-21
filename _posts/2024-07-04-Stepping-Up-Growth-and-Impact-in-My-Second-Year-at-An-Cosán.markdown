@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Stepping Up: Growth and Impact in My Second Year at An Cosán"
-date: 2024-07-04 18:35:16 +0100
+date: 2024-07-04 18:35:17 +0100
 image: /assets/images/blog/post-3.png
 author: Darragh Crawley-Doyle
 tags: IT, Career, Work Anniversary, Non-profit, Education, Empowerment
