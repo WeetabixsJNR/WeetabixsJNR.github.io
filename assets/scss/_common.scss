@@ -29,6 +29,19 @@ ul {
   margin: 0px;
 }
 
+/* Markdown page/post body content still wants real bullets to stay scannable. */
+.col-md-8 ul,
+.content ul {
+  list-style-type: disc;
+  margin: 0 0 1rem;
+  padding-left: 1.4rem;
+}
+
+.col-md-8 li,
+.content li {
+  margin-bottom: .4rem;
+}
+
 img {
   vertical-align: middle;
   border: 0;
@@ -65,15 +78,36 @@ a:hover {
   outline: 0;
 }
 
-.section {
-  padding-top: 80px;
-  padding-bottom: 80px;
-
-  &-title {
-    margin-bottom: 80px;
-    font-family: $secondary-font;
+.client-logo-slider {
+  .slick-track {
+    display: flex !important;
+    align-items: center;
+  }
+  .slick-slide {
+    display: flex !important;
+    justify-content: center;
   }
 }
+
+.section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  &-title {
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid $primary-color;
+    font-family: $secondary-font;
+    font-size: 28px;
+    font-weight: 700;
+    color: $primary-color;
+    text-align: left !important;
+  }
+}
+
+/* The document reference uses one dominant classification colour straight
+   through a page: headings, rules, table headers. Sticking to one accent
+   here instead of a different colour per section. */
 
 .bg-cover {
   background-size: cover;
@@ -175,7 +209,14 @@ a:hover {
 }
 
 .rounded-lg{
-  border-radius: 15px;
+  border-radius: 0;
+}
+
+/* Flat document system: no rounded corners anywhere except the small
+   circular icon markers. */
+.rounded,
+.rounded-top {
+  border-radius: 0 !important;
 }
 
 .overflow-hidden {
@@ -190,12 +231,33 @@ a:hover {
   font-family: $secondary-font !important;
 }
 
+.mono {
+  font-family: $monospace-font !important;
+}
+
 .shadow {
-  box-shadow: 0px 18px 39.1px 6.9px rgba(224, 241, 255, 0.34) !important;
+  box-shadow: none !important;
 }
 
 .bg-dark{
-  background-color: #222222 !important;
+  background-color: $black !important;
+}
+
+.page-title,
+.page-title-alt {
+  background: $body-color;
+  border-bottom: 2px solid $primary-color;
+
+  h1 {
+    font-size: 36px;
+  }
+}
+
+/* Flat, practical backdrops: no stock template leaf/dot flourishes */
+.layer,
+.layer-bg,
+[class*="bg-shape"] {
+  display: none !important;
 }
 
 /* icon */
@@ -211,7 +273,7 @@ a:hover {
 }
 
 .icon-light {
-  color: #c8d5ef;
+  color: $primary-color;
 }
 
 /* /icon */
@@ -261,14 +323,26 @@ textarea.form-control{
 }
 /* /form */
 
-/* card */
+/* callout: flat tinted panel, no radius, no shadow */
+.callout {
+  padding: 20px 24px;
+  background: $gray;
+  border-left: 4px solid $primary-color;
+  font-style: italic;
+  color: $text-color-dark;
+}
+
+/* card: flat rectangle, no radius, no shadow, a flat colour cap on top */
 .card{
-  border: 0;
+  border: 1px solid $border-color;
+  border-radius: 0;
+  border-top: 4px solid $primary-color;
   &-header{
     border: 0;
   }
   &-footer{
     border: 0;
+    background: transparent;
   }
 }
 /* /card */

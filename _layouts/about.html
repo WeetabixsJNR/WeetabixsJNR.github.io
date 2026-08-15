@@ -2,21 +2,14 @@
 layout: default
 ---
 <!-- page title -->
-<section class="page-title-alt bg-primary position-relative">
+<section class="page-title-alt">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1 class="text-white font-tertiary">{{ page.title }}</h1>
+        <h1 class="font-tertiary">{{ page.title }}</h1>
       </div>
     </div>
   </div>
-  <!-- background shapes -->
-  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
-  <img src="{{ site.baseurl }}/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-6">
 </section>
 <!-- /page title -->
 
@@ -27,9 +20,9 @@ layout: default
       <div class="col-md-8">
         {{ content }}
       </div>
-      <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
-          <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.author }}" class="img-fluid w-100 rounded-lg border-thick border-white">
+      <div class="col-md-4 text-center">
+        <div class="mb-4">
+          <img src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.author }}" class="img-fluid w-100 border-thick">
         </div>
         <h4>{{ page.author }}</h4>
       </div>
@@ -41,14 +34,5 @@ layout: default
 {% include work-process-section.html %}
 
 {% include team-section.html %}
-  
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2 class="section-title">Companies I have worked with</h2>
-      </div>
-    </div>
-    {% include client-slider.html %}
-  </div>
-</section>
+
+{% include client-section.html %}

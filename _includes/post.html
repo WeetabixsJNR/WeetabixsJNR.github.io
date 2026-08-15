@@ -1,6 +1,8 @@
 <div class="col-lg-4 col-sm-6 mb-4">
-  <article class="card shadow">
-    <img class="rounded card-img-top" src="{{ post.image | relative_url }}" alt="{{ post.title }}">
+  <article class="card h-100" style="border-top-color: {{ post.accent | default: '#F59F00' }};">
+    <div class="post-tile" style="background: {{ post.accent | default: '#F59F00' }};">
+      <i class="{{ post.icon | default: 'ti-write' }}"></i>
+    </div>
     <div class="card-body">
       <h4 class="card-title">
         <a class="text-dark" href="{{ post.url | relative_url }}">{{ post.title }}</a>

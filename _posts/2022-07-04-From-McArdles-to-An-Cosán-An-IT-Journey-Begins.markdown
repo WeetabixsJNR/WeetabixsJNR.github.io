@@ -3,6 +3,8 @@ layout: post
 title: "From McArdles to An Cosán: An IT Journey Begins"
 date: 2022-07-04 15:05:55 +0100
 image: /assets/images/blog/post-5.jpg
+icon: ti-rocket
+accent: "#F59F00"
 author: Darragh Crawley-Doyle
 tags: IT, Career, Transition, Learning, Projects
 ---

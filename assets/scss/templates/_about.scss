@@ -1,55 +1,37 @@
 .page-title-alt{
-  padding: 350px 0 70px;
+  padding: 130px 0 40px;
 }
 
 .border-thick{
-  border: 10px solid;
+  border: 4px solid $border-color;
 }
 
-.drag-lg-top{
-  margin-top: -230px;
-  @include desktop {
-    margin-top: 0;
+/* Flat solid-colour workflow steps, spaced like every other card on the
+   site rather than butted edge to edge. */
+.workflow-step {
+  height: 100%;
+  padding: 40px 34px;
+  border: 1px solid $border-color;
+  color: $white;
+
+  h4 {
+    color: $white;
+    margin-bottom: 16px;
+    font-size: 19px;
+    line-height: 1.3;
+  }
+
+  p {
+    margin: 0;
+    color: rgba($white, .85);
+    font-size: 15px;
+    line-height: 1.7;
   }
 }
 
-.page-title-alt{
-  .container{
-    position: relative;
-    z-index: 1;
-  }
-  .bg-shape-1{
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  .bg-shape-2{
-    position: absolute;
-    left: 70px;
-    top: 100px;
-  }
-  .bg-shape-3{
-    position: absolute;
-    left: 30%;
-    top: 50px;
-    transform: rotate(180deg);
-  }
-
-  .bg-shape-4{
-    position: absolute;
-    left: 100px;
-    bottom: 100px;
-  }
-
-  .bg-shape-5{
-    position: absolute;
-    left: 40%;
-    bottom: -25px;
-  }
-
-  .bg-shape-6{
-    position: absolute;
-    bottom: 100px;
-    right: -100px;
-  }
+.workflow-num {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

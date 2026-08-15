@@ -1,16 +1,17 @@
 {% if site.data.settings.services %}
 <!-- services -->
-<section class="section">
+<section class="section section-hobbies">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
         <h2 class="section-title">{{ site.data.settings.services-title }}</h2>
       </div>
+      {% assign hobby-accents = "#286FD6|#28B78D|#8C45C8" | split: "|" %}
       {% for service in site.data.settings.services %}
       <div class="col-md-4 mb-4 mb-md-0">
-        <div class="card hover-shadow shadow">
+        <div class="card hover-shadow shadow" style="border-top-color: {{ hobby-accents[forloop.index0] }};">
           <div class="card-body {% if service.active %}active-bg-primary{% endif %} text-center px-4 py-5">
-            <i class="{{ service.icon }} icon mb-5 d-inline-block"></i>
+            <i class="{{ service.icon }} icon mb-5 d-inline-block" style="color: {{ hobby-accents[forloop.index0] }};"></i>
             <h4 class="mb-4">{{ service.name }}</h4>
             <p>{{ service.description }}</p>
           </div>

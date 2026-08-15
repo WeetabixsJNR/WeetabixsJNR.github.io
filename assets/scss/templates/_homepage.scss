@@ -1,46 +1,12 @@
 /* skills */
-.progress-wrapper {
-  height: 130px;
-  overflow: hidden;
+.skill-bar-track {
+  height: 10px;
+  background: $gray;
+  border: 1px solid $border-color;
 }
 
-.wave {
-  position: absolute;
-  width: 100%;
+.skill-bar-fill {
   height: 100%;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    width: 800px;
-    height: 800px;
-    bottom: 0;
-    left: 50%;
-    background-color: rgba(255, 255, 255, .4);
-    border-radius: 45%;
-    transform: translateX(-50%) rotate(0);
-    animation: rotate 6s linear infinite;
-    z-index: 10;
-  }
-
-  &::after {
-    border-radius: 47%;
-    background-color: rgba(255, 255, 255, .9);
-    transform: translateX(-50%) rotate(0);
-    animation: rotate 10s linear -5s infinite;
-    z-index: 20;
-  }
-}
-
-@keyframes rotate {
-  50% {
-    transform: translateX(-50%) rotate(180deg);
-  }
-
-  100% {
-    transform: translateX(-50%) rotate(360deg);
-  }
 }
 
 /* /skills */
@@ -80,7 +46,7 @@
 .hover-shadow{
   transition: .2s ease;
   &:hover{
-    box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+    border-color: $primary-color;
   }
 }
 
@@ -188,26 +154,78 @@
 
 /* footer */
 .footer-section {
-  padding-top: 200px;
-}
-
-.section-on-footer {
-  margin-bottom: -250px;
-}
-
-.shadow-down {
   position: relative;
+  padding-left: 8px;
+  border-bottom: 4px solid $accent-berry;
 
   &::before {
+    content: '';
     position: absolute;
-    content: "";
-    box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34);
-    height: 100%;
-    width: 100%;
-    left: 0;
     top: 0;
-    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 8px;
+    background: $accent-berry;
   }
+}
+
+.footer-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: $primary-color;
+}
+
+.footer-value {
+  font-size: 17px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* Flat colour tile with a large icon, standing in for stock photography
+   on blog cards, matching the flat document card language. */
+.post-tile {
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 56px;
+    color: $white;
+  }
+}
+
+.post-icon-badge {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: 24px;
+    color: $white;
+  }
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 18px;
+  color: $white;
+  font-size: 20px;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+
+.shadow-down {
+  border: 1px solid $border-color;
 }
 
 /* /footer */

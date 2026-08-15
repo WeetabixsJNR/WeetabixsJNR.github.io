@@ -4,16 +4,20 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.email }}</p>
+          <span class="footer-label mono">EMAIL</span>
+          <p class="text-white footer-value font-secondary">{{ site.data.settings.email }}</p>
         </div>
         <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.phone }}</p>
+          <span class="footer-label mono">PHONE</span>
+          <p class="text-white footer-value font-secondary">{{ site.data.settings.phone }}</p>
         </div>
         <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">{{ site.data.settings.address }}</p>
+          <span class="footer-label mono">ELSEWHERE</span>
+          <div class="footer-social">
+            {% for social in site.data.settings.social %}
+            <a href="{{ social.link }}"><i class="{{ social.icon }}"></i></a>
+            {% endfor %}
+          </div>
         </div>
       </div>
     </div>

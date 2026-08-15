@@ -36,19 +36,20 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 # Hero Section
 
 hero:
-  hero-title: Howdy! <br> I’m Darragh <br> IT Support Officer
+  hero-title: Technology that works with people.
+  hero-subtitle: Practical IT infrastructure, automation and workflow design, built around how an organisation already works, not the other way round.
+  hero-role: IT Support Coordinator, An Cosán
+  hero-location: Dublin, Ireland
+  hero-experience: 6+ years in IT
 
 social:
   - { icon: "ti-linkedin", link: "https://www.linkedin.com/in/darragh-crawley-doyle-1481bb201/" }
-  - { icon: "ti-facebook", link: "https://www.facebook.com/profile.php?id=100087389336743" }
-  - { icon: "ti-instagram", link: "https://www.instagram.com/darraghcrawleydoyle/" }
-  - { icon: "ti-twitter", link: "https://twitter.com/WeetabixsJNR" }
 
 #-------------------------------
 # About (Section and Page)
 
 # About Section
-blurb: I am a hard-working, motivated and enthusiastic person who has developed a mature and responsible approach to any task that I undertake. I strive to achieve the highest standard possible, and I am accustomed to working in a challenging fast-paced environment, and I enjoy dealing with multiple projects and priorities at the same time.
+blurb: IT professional with continuous experience since March 2020, currently leading day-to-day IT operations, infrastructure and service desk, for a multi-site organisation supporting around 500 to 600 users and 310 devices. I build automation, workflows and integrations around how an organisation already works, understanding a process with the people who use it before redesigning it.
 
 blurb-btn-link: "/about"
 blurb-btn-name: know more
@@ -57,17 +58,17 @@ blurb-btn-name: know more
 
 # Work Process Section
 work-process:
-  - title: "Identify and Analyze"
+  - title: "Understand"
     icon: "assets/images/icons/plan.png"
-    content: "Proficient at detecting and dissecting IT issues using diagnostic tools, understanding system logs, and laying out effective plans for system enhancements."
+    content: "Meet the people who own the process, map how it actually runs today, and find where it's fragile before touching a system."
 
-  - title: "Troubleshoot and Resolve"
+  - title: "Build Around the Workflow"
     icon: "assets/images/icons/design.png"
-    content: "Leveraging in-depth knowledge of various hardware and software to troubleshoot a diverse range of technical issues, as well as experience in maintaining and updating IT systems."
+    content: "Automation, workflows and integrations designed around how an organisation already works, reducing repetitive tasks and making technology simpler to use, not the other way round."
 
-  - title: "Support and Educate"
+  - title: "Prove It Before Rollout"
     icon: "assets/images/icons/print.png"
-    content: "Excelling at providing user support and training, adept at simplifying complex IT concepts for non-technical users, and experienced in creating user-friendly guides and conducting training sessions."
+    content: "Working prototypes before wide rollout, documented RTO/RPO, and clear reporting for senior leadership, so change lands without disrupting the work it's meant to support."
 
 # My Team Section
 # team:
@@ -88,10 +89,10 @@ work-process:
 
 skills-title: Skills
 skills:
-  - { name: Technical Support and Troubleshooting, color: "#fdb157", value: "90%" }
-  - { name: User Assistance and Training, color: "#9473e6", value: "85%" }
-  - { name: System Maintenance and Monitoring, color: "#bdecf6", value: "75%" }
-  - { name: Project Management and Strategy, color: "#ffbcaa", value: "60%" }
+  - { name: Microsoft Cloud and Identity, color: "#F59F00", value: "95%" }
+  - { name: Infrastructure and Networking, color: "#286FD6", value: "92%" }
+  - { name: Virtualisation and Recovery, color: "#28B78D", value: "88%" }
+  - { name: Service Delivery and Leadership, color: "#8C45C8", value: "90%" }
 
 #-------------------------------
 # Exprerience Section
@@ -107,20 +108,55 @@ experience:
   - {
       name: IT Support Officer,
       icon: "icon-2.png",
-      date: "Jul 2022 - Present",
+      date: "Jul 2022 - Sep 2025",
       organization: "AN COSÁN",
+    }
+  - {
+      name: IT Support Coordinator,
+      icon: "icon-3.png",
+      date: "Sep 2025 - Present",
+      organization: "AN COSÁN",
+    }
+
+#-------------------------------
+# Selected Projects Section
+
+projects-title: Selected Projects
+projects:
+  - {
+      name: "Quality Document Governance Framework",
+      icon: ti-agenda,
+      accent: "#28B78D",
+      tag: "SharePoint / Power Automate",
+      description: "Designed a controlled-document system on SharePoint, Word and Power Automate around how authors, reviewers and approvers already worked: seven-state approval lifecycle, least-privilege permissions, governed metadata. Proved the design in a working prototype before rollout.",
+    }
+  - {
+      name: "Staff Onboarding Automation",
+      icon: ti-bolt-alt,
+      accent: "#286FD6",
+      tag: "Power Automate / Microsoft Forms",
+      description: "Automated joiner workflow shaped by direct conversations with hiring managers, building management and HR: one form triggers job-code assignment, site-access alerts, and IT/equipment provisioning, replacing an ad hoc, email-based process.",
+    }
+  - {
+      name: "Managed IT Services Tender",
+      icon: ti-search,
+      accent: "#8C45C8",
+      tag: "Vendor Evaluation / SLAs",
+      description: "Led requirements gathering, weighted supplier evaluation, and a documented recommendation for an organisation-wide managed services contract.",
+    }
+  - {
+      name: "Windows 11 & Endpoint Rollout",
+      icon: ti-desktop,
+      accent: "#F59F00",
+      tag: "Intune / Autopilot",
+      description: "Coordinated an org-wide rollout across roughly 300 devices using Intune and Autopilot: deployment planning, staff guidance, progress reporting.",
     }
 
 #-------------------------------
 # Education Section
 
-education-title: Education
+education-title: Education & Certifications
 education:
-  - {
-      name: Leaving Certificate,
-      date: "2020",
-      organization: "St. Peter's College, Dunboyne",
-    }
   - {
       name: "Level 200, Altaro VM Backup certified",
       date: "2020",
@@ -131,6 +167,16 @@ education:
       date: "2021",
       organization: "Dunboyne College of Further Education",
     }
+  - {
+      name: "Microsoft Applied Skills: Create and Manage Automated Processes Using Power Automate",
+      date: "Jul 2026",
+      organization: "Microsoft",
+    }
+  - {
+      name: "Microsoft Dynamics 365 Fundamentals (in progress)",
+      date: "2026",
+      organization: "Microsoft Learn",
+    }
 
 #-------------------------------
 # Services Section
@@ -139,21 +185,21 @@ services-title: Hobbies
 services:
   - {
       name: Gaming and Learning,
-      icon: ti-headphone-alt,
-	  description: "In my downtime, I delve into the world of video games and continually seek knowledge through diverse online content. This balance fuels my creativity and problem-solving skills, contributing positively to my professional persona.",
-      active: true,
+      icon: ti-game,
+      description: "In my downtime I'm usually gaming with friends, which more often than not means I'm also the one running the servers that keep those sessions going, from game servers to the odd Discord bot. I balance that with a lot of learning through online content, poking at something until I understand it, which feeds straight back into how I work.",
+      active: false,
     }
   - {
-      name: Video/Audio Editing,
-      icon: ti-video-clapper,
-      description: "An enthusiast in exploring and mastering various video and audio editing techniques through software like Adobe Premiere Pro and Final Cut. My learning journey is often fueled by channels like EposVox, delivering deep dives into filming techniques.",
-      active: true,
+      name: Live AV and Events,
+      icon: ti-video-camera,
+      description: "I run live audio and video for staff days, graduations and other events, plus podcasting and hybrid setups that mix in-person attendees with a Zoom or streamed audience. Getting the mix right in the room, on the stream and in the recording all at once is its own kind of troubleshooting. Channels like EposVox are still a big part of how I learn new techniques.",
+      active: false,
     }
   - {
       name: Craftsmanship,
-      icon: ti-brush-alt,
-      description: "Passionate about creating unique, hands-on projects involving metal, wood, and leather working. I enjoy integrating my electronics knowledge into these projects, leading to innovative and personalized creations.",
-      active: true,
+      icon: ti-ruler-pencil,
+      description: "Passionate about hands-on projects involving metal, wood, 3D printing and CAD design. I love designing and printing random fixes and gadgets for things around the house, and I enjoy taking an idea from a CAD model to something I can actually hold.",
+      active: false,
     }
 
 #-------------------------------

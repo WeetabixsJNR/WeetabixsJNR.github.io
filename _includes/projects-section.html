@@ -1,0 +1,25 @@
+{% if site.data.settings.projects %}
+<!-- projects -->
+<section class="section section-projects bg-gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">{{ site.data.settings.projects-title }}</h2>
+      </div>
+      {% for project in site.data.settings.projects %}
+      <div class="col-md-6 mb-4">
+        <div class="card h-100 p-4" style="border-top-color: {{ project.accent }};">
+          <span class="mono d-inline-block mb-2" style="font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; border-bottom: 1px solid #D5C59E; color: #7A7568; padding-bottom: 6px;">{{ project.tag }}</span>
+          <h4 class="mb-3">
+            <i class="{{ project.icon }}" style="color: {{ project.accent }};"></i>
+            {{ project.name }}
+          </h4>
+          <p class="mb-0">{{ project.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /projects -->
+{% endif %}

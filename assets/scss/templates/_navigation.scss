@@ -1,16 +1,17 @@
 .navigation{
-  padding: 40px 130px;
-  transition: .3s ease;
+  padding: 24px 60px;
+  background: $body-color;
+  border-top: 4px solid $black;
+  border-bottom: 2px solid $primary-color;
+  transition: .2s ease;
   &.nav-bg {
-    background-color: $primary-color;
-    padding: 15px 100px;
+    padding: 16px 60px;
     @include desktop {
-      padding: 15px 20px;
+      padding: 16px 20px;
     }
   }
   @include desktop {
-    padding: 20px;
-    background: $primary-color;
+    padding: 16px 20px;
   }
 }
 
@@ -19,14 +20,33 @@
     .nav-link{
       font-family: $secondary-font;
       text-transform: uppercase;
+      letter-spacing: .03em;
       padding: 15px;
+      color: $text-color-dark;
     }
     &.active{
       font-weight: bold;
+      color: $primary-color;
     }
   }
 }
 
-.navbar-dark .navbar-nav .nav-link{
-  color: $white;
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: $text-color-dark;
+}
+
+/* The toggler defaults to white-on-transparent for a dark navbar; ours is
+   now a flat Paper bar, so it needs a dark icon and border to stay visible. */
+.navbar-dark .navbar-toggler {
+  border-color: rgba(21, 27, 34, .25);
+}
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(21, 27, 34, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse {
+  background: $body-color;
 }
