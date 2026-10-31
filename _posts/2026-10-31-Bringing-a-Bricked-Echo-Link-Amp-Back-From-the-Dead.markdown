@@ -64,10 +64,9 @@ Right, the part nobody cares about until they need it. This is specific to an Am
 
 ### What you need
 
-Software and downloads:
+**Software.** Python 3 for Windows; [mtkclient](https://github.com/bkerler/mtkclient), the open-source tool that talks to MediaTek boot ROMs; and [UsbDk](https://github.com/daynix/UsbDk/releases), the Red Hat USB filter-driver runtime that mtkclient uses as its USB backend on Windows to reach the boot ROM reliably. There's an optional fallback, [Zadig](https://zadig.akeo.ie/), for binding a WinUSB driver to the port, but I didn't end up needing it: the MediaTek serial (VCOM) driver Windows installs automatically was enough.
 
-* **Python 3** for Windows.
-* **[mtkclient](https://github.com/bkerler/mtkclient)**, the open-source tool that talks to MediaTek boot ROMs. Clone it and install its requirements into a virtual environment:
+Clone mtkclient and install it into a virtual environment:
 
 ```powershell
 git clone https://github.com/bkerler/mtkclient
@@ -76,14 +75,9 @@ py -3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-I keep mine at `%LOCALAPPDATA%\smarthome-tools\mtkclient`, which is what the commands below assume.
+I keep mine at `%LOCALAPPDATA%\smarthome-tools\mtkclient`, which is what the commands below assume. Install UsbDk as well, and point mtkclient at it with an environment variable (shown in each command below).
 
-* **[UsbDk](https://github.com/daynix/UsbDk/releases)**, the Red Hat USB filter-driver runtime. On Windows this is the USB backend mtkclient uses to reach the boot ROM reliably. Install it, then tell mtkclient to use it with an environment variable (shown in each command below). Optional fallback: [Zadig](https://zadig.akeo.ie/), to bind a WinUSB driver to the port. I did not end up needing it, because the MediaTek serial (VCOM) driver Windows installs automatically was enough, but keep it in your back pocket.
-
-Hardware:
-
-* A **data-capable micro USB cable**. This bit me: my first cable was charge-only and the device simply didn't enumerate. Swap cables before you assume anything's wrong.
-* The device opened enough to reach the internal micro USB port.
+**Hardware.** A data-capable micro USB cable, and the device opened enough to reach the internal micro USB port. The cable bit me: my first one was charge-only and the device simply didn't enumerate, so swap cables before you assume anything's wrong.
 
 For the offline analysis (reading your backup without touching the device), I used three small read-only scripts I wrote along the way: one that parses the partition dumps, one that reads an ext4 image without mounting it, and one that carves the ramdisk out of a boot image. I wrote the ext4 reader because neither 7-Zip nor WSL would read the data-partition image cleanly on this machine, and I wanted something that only ever reads. They're all dependency-free Python and they're on GitHub as [mtk-dump-tools](https://github.com/WeetabixsJNR/mtk-dump-tools) if they're any use to you.
 

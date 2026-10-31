@@ -1,8 +1,10 @@
 /*------------------------------------------------------------------
 [ARTICLE CONTENT]
-Styling for rich blog-post bodies: code blocks, inline code, tables and
-blockquotes. Scoped to .content so it only affects post bodies. Added for
-technical posts that use code and tables; prose posts are unaffected.
+Styling for rich blog-post bodies: code blocks, inline code, tables,
+blockquotes and links. Scoped to .content so it only affects post bodies.
+Colours come from the site palette in _variables.scss (Weety Orange, Paper,
+Panel, Ink, Soft Line and the accent set) so technical posts stay on-brand.
+No foreign blue.
 -------------------------------------------------------------------*/
 
 .content {
@@ -11,18 +13,19 @@ technical posts that use code and tables; prose posts are unaffected.
   code {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     font-size: 0.875em;
-    background: #eef1f4;
-    color: #24292f;
-    padding: 0.12em 0.4em;
+    background: $gray;
+    color: $text-color-dark;
+    border: 1px solid $border-color;
+    padding: 0.1em 0.4em;
     border-radius: 4px;
     word-break: break-word;
   }
 
-  // Fenced code blocks (light, GitHub-style, horizontal scroll for long lines)
+  // Fenced code blocks: a warm inset panel, horizontal scroll for long lines
   pre {
-    background: #f6f8fa;
-    color: #24292f;
-    border: 1px solid #e3e6ea;
+    background: $gray;
+    color: $text-color-dark;
+    border: 1px solid $border-color;
     padding: 1rem 1.2rem;
     border-radius: 8px;
     overflow-x: auto;
@@ -32,6 +35,7 @@ technical posts that use code and tables; prose posts are unaffected.
 
     code {
       background: none;
+      border: 0;
       color: inherit;
       padding: 0;
       font-size: inherit;
@@ -41,20 +45,19 @@ technical posts that use code and tables; prose posts are unaffected.
     }
   }
 
-  // Rouge syntax-highlight tokens (light theme to match the code block)
+  // Syntax highlighting mapped to the site accent palette (no blue)
   .highlight {
-    .c, .c1, .cm, .cp { color: #6e7781; font-style: italic; } // comments
-    .k, .kd, .kn, .kc { color: #cf222e; }                     // keywords
-    .s, .s1, .s2, .sb, .se { color: #0a3069; }                // strings
-    .nb, .bp { color: #953800; }                              // builtins
-    .nv, .vg, .vi { color: #0550ae; }                         // variables ($env)
-    .o, .ow { color: #cf222e; }                               // operators
-    .mi, .mf, .m { color: #0550ae; }                          // numbers
-    .nf, .fm { color: #8250df; }                              // functions
-    .nx, .n, .p, .w, .nt { color: #24292f; }                  // names/punct/ws
+    .c, .c1, .cm, .cp      { color: $text-color-light; font-style: italic; } // comments
+    .k, .kd, .kn, .kc,
+    .o, .ow                { color: $accent-red; }                           // keywords / operators
+    .s, .s1, .s2, .sb, .se { color: $accent-mint; }                          // strings
+    .nv, .vg, .vi,
+    .mi, .mf, .m,
+    .nf, .fm, .nb, .bp     { color: $accent-berry; }                         // vars / numbers / builtins
+    .nx, .n, .p, .w, .nt   { color: $text-color-dark; }                      // names / punctuation
   }
 
-  // Tables (bare <table> from kramdown gets no Bootstrap class, so style it here)
+  // Tables (bare <table> from kramdown; style it from the palette)
   table {
     width: 100%;
     margin: 1.5rem 0;
@@ -62,30 +65,30 @@ technical posts that use code and tables; prose posts are unaffected.
     display: block;
     overflow-x: auto;
     font-size: 0.95rem;
+    color: $text-color;
 
     th, td {
       padding: 0.6rem 0.9rem;
-      border: 1px solid #e3e6ea;
+      border: 1px solid $border-color;
       text-align: left;
       vertical-align: top;
     }
 
     thead th {
-      background: #f4f5f7;
+      background: $gray;
+      color: $text-color-dark;
       font-weight: 600;
-    }
-
-    tbody tr:nth-child(even) {
-      background: #fafbfc;
+      border-bottom: 2px solid $border-color;
     }
   }
 
-  // Blockquotes (used for the warnings and asides in technical posts)
+  // Blockquotes (warnings and asides)
   blockquote {
     margin: 1.5rem 0;
     padding: 0.8rem 1.2rem;
-    border-left: 4px solid #f59f00;
-    background: #fff8e6;
+    border-left: 4px solid $primary-color;
+    background: $gray;
+    color: $text-color;
     border-radius: 0 6px 6px 0;
 
     p:last-child {
@@ -93,16 +96,7 @@ technical posts that use code and tables; prose posts are unaffected.
     }
   }
 
-  // Breathing room for the headings of a long, structured post
-  h2 {
-    margin-top: 2.6rem;
-  }
-
-  h3 {
-    margin-top: 1.8rem;
-  }
-
-  // Links in brand orange, not the theme's default blue
+  // Links in Weety Orange, not the theme's default blue
   a {
     color: $primary-color;
     text-decoration: underline;
@@ -123,5 +117,14 @@ technical posts that use code and tables; prose posts are unaffected.
   > p:first-of-type strong {
     font-size: 22px;
     color: $text-color-dark;
+  }
+
+  // Breathing room for the headings of a long, structured post
+  h2 {
+    margin-top: 2.6rem;
+  }
+
+  h3 {
+    margin-top: 1.8rem;
   }
 }
