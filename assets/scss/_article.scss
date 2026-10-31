@@ -101,4 +101,27 @@ technical posts that use code and tables; prose posts are unaffected.
   h3 {
     margin-top: 1.8rem;
   }
+
+  // Links in brand orange, not the theme's default blue
+  a {
+    color: $primary-color;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: #d98a00;
+    }
+  }
+
+  // Inline bold should stay bold, not heading-sized. The theme enlarges every
+  // <strong> to 22px for the opening lead line; keep that only for the lead.
+  strong {
+    font-size: inherit;
+    color: inherit;
+  }
+
+  > p:first-of-type strong {
+    font-size: 22px;
+    color: $text-color-dark;
+  }
 }
