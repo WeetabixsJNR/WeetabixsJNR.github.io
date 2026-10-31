@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bringing a Bricked Echo Link Amp Back From the Dead"
-date: 2026-10-31 20:00:00 +0000
+date: 2026-10-31 01:30:00 +0000
 icon: ti-reload
 accent: "#E8A33D"
 author: Darragh Crawley-Doyle
