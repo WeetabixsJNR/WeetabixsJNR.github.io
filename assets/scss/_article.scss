@@ -1,0 +1,104 @@
+/*------------------------------------------------------------------
+[ARTICLE CONTENT]
+Styling for rich blog-post bodies: code blocks, inline code, tables and
+blockquotes. Scoped to .content so it only affects post bodies. Added for
+technical posts that use code and tables; prose posts are unaffected.
+-------------------------------------------------------------------*/
+
+.content {
+
+  // Inline code
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.875em;
+    background: #eef1f4;
+    color: #24292f;
+    padding: 0.12em 0.4em;
+    border-radius: 4px;
+    word-break: break-word;
+  }
+
+  // Fenced code blocks (light, GitHub-style, horizontal scroll for long lines)
+  pre {
+    background: #f6f8fa;
+    color: #24292f;
+    border: 1px solid #e3e6ea;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    margin: 1.5rem 0;
+
+    code {
+      background: none;
+      color: inherit;
+      padding: 0;
+      font-size: inherit;
+      border-radius: 0;
+      white-space: pre;
+      word-break: normal;
+    }
+  }
+
+  // Rouge syntax-highlight tokens (light theme to match the code block)
+  .highlight {
+    .c, .c1, .cm, .cp { color: #6e7781; font-style: italic; } // comments
+    .k, .kd, .kn, .kc { color: #cf222e; }                     // keywords
+    .s, .s1, .s2, .sb, .se { color: #0a3069; }                // strings
+    .nb, .bp { color: #953800; }                              // builtins
+    .nv, .vg, .vi { color: #0550ae; }                         // variables ($env)
+    .o, .ow { color: #cf222e; }                               // operators
+    .mi, .mf, .m { color: #0550ae; }                          // numbers
+    .nf, .fm { color: #8250df; }                              // functions
+    .nx, .n, .p, .w, .nt { color: #24292f; }                  // names/punct/ws
+  }
+
+  // Tables (bare <table> from kramdown gets no Bootstrap class, so style it here)
+  table {
+    width: 100%;
+    margin: 1.5rem 0;
+    border-collapse: collapse;
+    display: block;
+    overflow-x: auto;
+    font-size: 0.95rem;
+
+    th, td {
+      padding: 0.6rem 0.9rem;
+      border: 1px solid #e3e6ea;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    thead th {
+      background: #f4f5f7;
+      font-weight: 600;
+    }
+
+    tbody tr:nth-child(even) {
+      background: #fafbfc;
+    }
+  }
+
+  // Blockquotes (used for the warnings and asides in technical posts)
+  blockquote {
+    margin: 1.5rem 0;
+    padding: 0.8rem 1.2rem;
+    border-left: 4px solid #f59f00;
+    background: #fff8e6;
+    border-radius: 0 6px 6px 0;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // Breathing room for the headings of a long, structured post
+  h2 {
+    margin-top: 2.6rem;
+  }
+
+  h3 {
+    margin-top: 1.8rem;
+  }
+}
